@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/lc-form/:path*",
+      "destination": "https://api.leadconnectorhq.com/:path*"
+    },
+    {
+      "source": "/lc-js/:path*",
+      "destination": "https://link.msgsndr.com/js/:path*"
+    }
+  ]
+}
