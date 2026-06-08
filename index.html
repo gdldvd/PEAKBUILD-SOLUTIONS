@@ -158,7 +158,7 @@ svg{max-width:100%}
       <p class="hero-form-title">Free Estimate</p>
       <p class="hero-form-sub">Free inspection · Written estimate within 24 hrs · Same-day response.</p>
       <div class="hero-form-fields" id="hero-form-fields">
-        <div id="form-placeholder" style="min-height:745px;background:#1e3a5c;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:rgba(255,255,255,0.4);font-size:13px" aria-hidden="true">
+        <div id="form-placeholder" style="min-height:748px;background:#1e3a5c;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:rgba(255,255,255,0.4);font-size:13px" aria-hidden="true">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="opacity:.3"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
           Loading form...
         </div>
@@ -180,8 +180,8 @@ svg{max-width:100%}
           iframe.setAttribute('data-trigger-type', 'alwaysShow');
           iframe.setAttribute('data-activation-type', 'alwaysActivated');
           iframe.setAttribute('data-deactivation-type', 'neverDeactivate');
-          iframe.setAttribute('data-form-name', 'Form 4');
-          iframe.setAttribute('data-height', '745');
+          iframe.setAttribute('data-form-name', 'Estimate');
+          iframe.setAttribute('data-height', '748');
           iframe.setAttribute('data-layout-iframe-id', 'inline-xT3xHb9nhtwP8LdCjkjC');
           iframe.setAttribute('data-form-id', 'xT3xHb9nhtwP8LdCjkjC');
           iframe.title = 'Free Estimate Form';
@@ -190,12 +190,12 @@ svg{max-width:100%}
           s.src = '/lc-js/form_embed.js';
           document.body.appendChild(s);
         }
-        // Load when form section scrolls into view (400px before)
-        var observer = new IntersectionObserver(function(entries) {
-          entries.forEach(function(e) { if (e.isIntersecting) { loadForm(); observer.disconnect(); } });
-        }, { rootMargin: '400px' });
-        var el = document.getElementById('estimate-form');
-        if (el) observer.observe(el); else loadForm();
+        // Load form immediately on page load
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', loadForm);
+        } else {
+          loadForm();
+        }
       })();
       </script>
     </div>
