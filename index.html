@@ -158,46 +158,25 @@ svg{max-width:100%}
       <p class="hero-form-title">Free Estimate</p>
       <p class="hero-form-sub">Free inspection · Written estimate within 24 hrs · Same-day response.</p>
       <div class="hero-form-fields" id="hero-form-fields">
-        <div id="form-placeholder" style="min-height:748px;background:#1e3a5c;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:rgba(255,255,255,0.4);font-size:13px" aria-hidden="true">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="opacity:.3"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-          Loading form...
-        </div>
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/form/xT3xHb9nhtwP8LdCjkjC"
+          style="width:100%;height:748px;border:none;border-radius:8px"
+          id="inline-xT3xHb9nhtwP8LdCjkjC"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Estimate"
+          data-height="748"
+          data-layout-iframe-id="inline-xT3xHb9nhtwP8LdCjkjC"
+          data-form-id="xT3xHb9nhtwP8LdCjkjC"
+          title="Estimate">
+        </iframe>
+        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
       </div>
-      <script>
-      (function() {
-        var loaded = false;
-        function loadForm() {
-          if (loaded) return;
-          loaded = true;
-          var placeholder = document.getElementById('form-placeholder');
-          var container = document.getElementById('hero-form-fields');
-          if (placeholder) placeholder.remove();
-          var iframe = document.createElement('iframe');
-          iframe.src = '/lc-form/widget/form/xT3xHb9nhtwP8LdCjkjC';
-          iframe.style.cssText = 'width:100%;height:900px;border:none;border-radius:8px;display:block';
-          iframe.id = 'inline-xT3xHb9nhtwP8LdCjkjC';
-          iframe.setAttribute('data-layout', "{'id':'INLINE'}");
-          iframe.setAttribute('data-trigger-type', 'alwaysShow');
-          iframe.setAttribute('data-activation-type', 'alwaysActivated');
-          iframe.setAttribute('data-deactivation-type', 'neverDeactivate');
-          iframe.setAttribute('data-form-name', 'Estimate');
-          iframe.setAttribute('data-height', '748');
-          iframe.setAttribute('data-layout-iframe-id', 'inline-xT3xHb9nhtwP8LdCjkjC');
-          iframe.setAttribute('data-form-id', 'xT3xHb9nhtwP8LdCjkjC');
-          iframe.title = 'Free Estimate Form';
-          container.appendChild(iframe);
-          var s = document.createElement('script');
-          s.src = '/lc-js/form_embed.js';
-          document.body.appendChild(s);
-        }
-        // Load form immediately on page load
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', loadForm);
-        } else {
-          loadForm();
-        }
-      })();
-      </script>
     </div>
   </div>
   </div>
