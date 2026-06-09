@@ -42,8 +42,11 @@
 <!-- Fonts loaded non-blocking -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="dns-prefetch" href="https://stcdn.leadconnectorhq.com">
-<link rel="dns-prefetch" href="https://backend.leadconnectorhq.com">
+<link rel="preconnect" href="https://api.leadconnectorhq.com" crossorigin>
+<link rel="preconnect" href="https://link.msgsndr.com" crossorigin>
+<link rel="preconnect" href="https://stcdn.leadconnectorhq.com" crossorigin>
+<link rel="preconnect" href="https://backend.leadconnectorhq.com" crossorigin>
+<link rel="dns-prefetch" href="https://api.leadconnectorhq.com">
 <link rel="dns-prefetch" href="https://link.msgsndr.com">
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
@@ -55,6 +58,15 @@ body{background:#fff}
 .nav-logo-icon{width:42px!important;height:38px!important;flex-shrink:0;display:block!important}
 svg{max-width:100%}
 .hero-form-fields{min-height:745px}
+/* Form skeleton loader */
+.form-skeleton{padding:8px 4px;display:flex;flex-direction:column;gap:12px;}
+.form-skeleton-line,.form-skeleton-field,.form-skeleton-btn{background:linear-gradient(90deg,#e8eaed 25%,#f5f5f5 50%,#e8eaed 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;border-radius:6px;}
+.form-skeleton-line{height:14px;}
+.form-skeleton-line.wide{width:75%;}
+.form-skeleton-line.medium{width:50%;}
+.form-skeleton-field{height:48px;border-radius:8px;}
+.form-skeleton-btn{height:52px;border-radius:8px;margin-top:8px;background:linear-gradient(90deg,#c5cdd6 25%,#d8dfe6 50%,#c5cdd6 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
 </style>
 
 </head>
@@ -158,9 +170,19 @@ svg{max-width:100%}
       <p class="hero-form-title">Free Estimate</p>
       <p class="hero-form-sub">Free inspection · Written estimate within 24 hrs · Same-day response.</p>
       <div class="hero-form-fields" id="hero-form-fields">
+        <div class="form-skeleton" id="form-skeleton" aria-hidden="true">
+          <div class="form-skeleton-line wide"></div>
+          <div class="form-skeleton-line medium"></div>
+          <div class="form-skeleton-field"></div>
+          <div class="form-skeleton-field"></div>
+          <div class="form-skeleton-field"></div>
+          <div class="form-skeleton-line medium"></div>
+          <div class="form-skeleton-field"></div>
+          <div class="form-skeleton-btn"></div>
+        </div>
         <iframe
           src="https://api.leadconnectorhq.com/widget/form/xT3xHb9nhtwP8LdCjkjC"
-          style="width:100%;height:748px;border:none;border-radius:8px"
+          style="width:100%;height:748px;border:none;border-radius:8px;opacity:0;transition:opacity 0.4s ease;"
           id="inline-xT3xHb9nhtwP8LdCjkjC"
           data-layout="{'id':'INLINE'}"
           data-trigger-type="alwaysShow"
@@ -173,7 +195,8 @@ svg{max-width:100%}
           data-height="748"
           data-layout-iframe-id="inline-xT3xHb9nhtwP8LdCjkjC"
           data-form-id="xT3xHb9nhtwP8LdCjkjC"
-          title="Estimate">
+          title="Estimate"
+          onload="this.style.opacity='1';var s=document.getElementById('form-skeleton');if(s)s.style.display='none';">
         </iframe>
         <script src="https://link.msgsndr.com/js/form_embed.js"></script>
       </div>
@@ -270,7 +293,7 @@ svg{max-width:100%}
 <section class="why-bg" id="why-us">
   <div class="section-inner">    <div class="section-label">Why PeakBuild</div>
     <h2 class="section-title reveal">The Difference Is in<br>the Details</h2>
-    <p class="section-sub reveal reveal-delay-1">We're not the biggest roofing company in town. We're the one that actually shows up when they say they will.</p>
+    <p class="section-sub reveal reveal-delay-1">We're not the biggest roofing company in town. We're the one that does what they promised — and backs it up in writing.</p>
     <div class="why-grid">
 
       
@@ -298,29 +321,29 @@ svg{max-width:100%}
         <div class="why-item reveal reveal-delay-1">
           <div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></div>
           <div>
-            <h3 class="why-item-heading">We show up on time, every time</h3>
-            <p>No-shows and late arrivals are the #1 complaint about contractors. We send a confirmation text the morning of every job.</p>
+            <h3 class="why-item-heading">10-year workmanship warranty — guaranteed</h3>
+            <p>If anything we installed fails due to workmanship within 10 years, we come back and fix it at no charge. No questions, no runaround.</p>
           </div>
         </div>
         <div class="why-item reveal reveal-delay-2">
           <div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></div>
           <div>
-            <h3 class="why-item-heading">Transparent, itemized quotes</h3>
-            <p>You'll know exactly what you're paying for before we start. No surprise charges, no vague line items.</p>
+            <h3 class="why-item-heading">You get a confirmation text the morning of every job</h3>
+            <p>No-shows and late arrivals are the #1 complaint about contractors. We send a reminder so you're never left wondering if we're coming.</p>
           </div>
         </div>
         <div class="why-item reveal reveal-delay-3">
           <div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></div>
           <div>
-            <h3 class="why-item-heading">We clean up completely</h3>
-            <p>Our crew does a thorough magnetic sweep for nails when every job is done. You won't find a shingle in your yard.</p>
+            <h3 class="why-item-heading">Written, line-by-line quotes — no surprise charges</h3>
+            <p>Every estimate is itemized in writing before we start. You'll know exactly what you're paying for. If the scope doesn't change, neither does the price.</p>
           </div>
         </div>
         <div class="why-item reveal reveal-delay-4">
           <div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></div>
           <div>
-            <h3 class="why-item-heading">10-year workmanship warranty</h3>
-            <p>We stand behind our work. If anything we installed fails due to workmanship within 10 years, we'll fix it at no charge.</p>
+            <h3 class="why-item-heading">Magnetic nail sweep on every job, without exception</h3>
+            <p>We run a full magnetic sweep of your yard and driveway when the job is done. You won't find a shingle, a nail, or a scrap of underlayment left behind.</p>
           </div>
         </div>
       </div>
