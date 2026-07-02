@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Free Emergency Roof Inspection | PeakBuild Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.leadconnectorhq.com" crossorigin>
+<link rel="preconnect" href="https://link.msgsndr.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1B2D42;--navy-light:#243852;--amber:#E07A28;--amber-light:#F08C3A;--amber-pale:#FDF3E9;
+  --cream:#F8F6F1;--white:#ffffff;--gray-50:#F9F9F9;--gray-100:#F1F0ED;--gray-300:#C8C6BF;--gray-700:#4A4845;
+  --text:#1B2D42;--text-muted:#6B6965;
+  --font-display:'Barlow Condensed','Arial Narrow',sans-serif;--font-body:'Barlow','Arial',sans-serif;
+  --radius:10px;--radius-lg:16px;
+  --shadow:0 4px 24px rgba(27,45,66,0.10);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+section{padding:48px 6%}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-label{font-family:var(--font-display);font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--amber);margin-bottom:10px;text-align:center}
+.section-title{font-family:var(--font-display);font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);line-height:1.1;letter-spacing:-0.3px;margin-bottom:14px;text-align:center}
+.section-sub{font-size:15.5px;color:var(--text-muted);max-width:560px;line-height:1.7;text-align:center;margin:0 auto}
+
+/* ---- mockup banner ---- */
+.mockup-banner{background:#111C2A;border-bottom:2px solid var(--amber);padding:9px 5%;display:flex;align-items:center;justify-content:center;gap:8px;text-align:center;flex-wrap:wrap}
+.mockup-banner span{font-size:12px;font-weight:600;color:rgba(255,255,255,0.85);letter-spacing:0.2px}
+.mockup-banner strong{color:var(--amber)}
+
+/* ---- top bar ---- */
+.topbar{position:sticky;top:0;z-index:60;background:var(--navy);padding:14px 5%;display:flex;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 2px 14px rgba(0,0,0,0.2)}
+.topbar-logo{font-family:var(--font-display);font-size:19px;font-weight:800;color:#fff;letter-spacing:0.3px}
+.topbar-logo span{color:var(--amber)}
+.topbar-right{display:flex;align-items:center;gap:14px}
+.topbar-phone{display:none;align-items:center;gap:7px;color:#fff;text-decoration:none;font-family:var(--font-display);font-size:16px;font-weight:700}
+.topbar-phone svg{color:var(--amber);flex-shrink:0}
+.btn-primary{background:var(--amber);color:var(--white);padding:16px 24px;border-radius:var(--radius);font-family:var(--font-display);font-size:17px;font-weight:700;text-decoration:none;letter-spacing:0.3px;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:background 0.2s,transform 0.2s;width:100%;max-width:380px}
+.topbar .btn-primary{width:auto;max-width:none;padding:11px 20px;font-size:14px}
+.btn-primary:hover{background:var(--amber-light);transform:translateY(-2px)}
+
+/* ---- hero ---- */
+.hero{background:var(--navy);padding:40px 6% 44px;text-align:center}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(224,122,40,0.15);border:1px solid rgba(224,122,40,0.35);color:#F5A05A;font-size:11.5px;font-weight:600;padding:6px 14px;border-radius:30px;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:20px}
+.hero-badge::before{content:'';width:6px;height:6px;background:var(--amber);border-radius:50%}
+.hero h1{font-family:var(--font-display);font-size:clamp(34px,6vw,54px);font-weight:800;color:#fff;line-height:1.08;letter-spacing:-0.3px;margin:0 auto 16px;max-width:760px}
+.hero h1 em{color:var(--amber);font-style:normal}
+.hero-sub{font-size:16.5px;color:rgba(255,255,255,0.72);max-width:520px;line-height:1.65;margin:0 auto 30px}
+.hero .btn-primary{font-size:18px;padding:16px 32px}
+.hero-microcopy{font-size:12.5px;color:rgba(255,255,255,0.4);margin-top:14px}
+.hero-photo{max-width:820px;margin:26px auto 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,0.4);aspect-ratio:4/3}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* ---- trust bar ---- */
+.trust-bar{background:var(--cream);border-bottom:1px solid var(--gray-300);padding:16px 5%;display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--gray-700)}
+.trust-item svg{width:17px;height:17px;color:var(--amber);flex-shrink:0}
+
+/* ---- stats strip ---- */
+.stats-bg{background:var(--white)}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:760px;margin:28px auto 0}
+.stat-box{text-align:center}
+.stat-num{font-family:var(--font-display);font-size:clamp(32px,5vw,44px);font-weight:800;color:var(--amber);line-height:1}
+.stat-label{font-size:13px;color:var(--text-muted);margin-top:4px;font-weight:500}
+
+/* ---- services ---- */
+.services-bg{background:var(--cream)}
+.services-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:36px}
+.service-card{background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-lg);padding:26px 22px;text-align:center;box-shadow:var(--shadow)}
+.service-icon{width:46px;height:46px;background:var(--amber-pale);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.service-icon svg{width:22px;height:22px;color:var(--amber)}
+.service-card h3{font-family:var(--font-display);font-size:19px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.service-card p{font-size:13.5px;color:var(--text-muted);line-height:1.6}
+.services-cta{text-align:center;margin-top:36px}
+
+/* ---- why us ---- */
+.why-bg{background:var(--white)}
+.why-grid{display:grid;grid-template-columns:1fr;gap:20px;max-width:760px;margin:36px auto 0}
+.why-item{display:flex;gap:14px;align-items:flex-start;background:var(--gray-50);border:1px solid var(--gray-100);border-radius:var(--radius-lg);padding:20px}
+.why-check{width:32px;height:32px;background:var(--amber-pale);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.why-check svg{width:16px;height:16px;color:var(--amber)}
+.why-item h3{font-family:var(--font-display);font-size:16.5px;font-weight:700;color:var(--navy);margin-bottom:3px}
+.why-item p{font-size:13.5px;color:var(--text-muted);line-height:1.6}
+
+/* ---- testimonials ---- */
+.testimonials-bg{background:var(--navy)}
+.testimonials-bg .section-title{color:#fff}
+.testimonials-bg .section-sub{color:rgba(255,255,255,0.6)}
+.testimonials-bg .section-label{color:#F5A05A}
+.reviews-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:36px}
+.review-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-lg);padding:22px}
+.review-stars{display:flex;gap:2px;margin-bottom:10px}
+.review-stars svg{width:14px;height:14px;fill:#FACC15}
+.review-text{font-size:13.5px;color:rgba(255,255,255,0.85);line-height:1.65;margin-bottom:14px;font-style:italic}
+.review-author{display:flex;align-items:center;gap:10px}
+.review-avatar{width:34px;height:34px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:12px;font-weight:800;color:#fff;flex-shrink:0}
+.review-name{font-size:13px;font-weight:600;color:#fff}
+.review-role{font-size:11px;color:rgba(255,255,255,0.45)}
+
+/* ---- FAQ accordion ---- */
+.faq-bg{background:var(--cream)}
+.faq-list{max-width:720px;margin:36px auto 0;display:flex;flex-direction:column;gap:10px}
+.faq-item{background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius);overflow:hidden}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--navy)}
+.faq-q svg{flex-shrink:0;transition:transform 0.3s cubic-bezier(.22,1,.36,1);color:var(--amber)}
+.faq-item.open .faq-q svg{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.35s cubic-bezier(.22,1,.36,1)}
+.faq-a p{font-size:13.5px;color:var(--text-muted);line-height:1.65;padding:0 20px 18px}
+.faq-item.open .faq-a{max-height:200px}
+
+/* ---- final cta ---- */
+.final-cta{background:var(--navy);padding:52px 6%;text-align:center}
+.final-cta h2{font-family:var(--font-display);font-size:clamp(28px,4vw,42px);font-weight:800;color:#fff;line-height:1.1;margin-bottom:14px}
+.final-cta h2 em{color:var(--amber);font-style:normal}
+.final-cta p{font-size:15px;color:rgba(255,255,255,0.6);margin-bottom:28px}
+
+/* ---- footer ---- */
+footer{background:#111C2A;padding:36px 5% 24px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.footer-logo{font-family:var(--font-display);font-size:19px;font-weight:800;color:rgba(255,255,255,0.8)}
+.footer-logo span{color:var(--amber)}
+.footer-address{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,0.6)}
+.footer-address svg{color:var(--amber);flex-shrink:0}
+.footer-copy{font-size:12px;color:rgba(255,255,255,0.45)}
+
+/* ---- sticky mobile bar ---- */
+.sticky-mobile{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70;background:var(--navy);border-top:1px solid rgba(255,255,255,0.12);padding:10px 16px;gap:10px}
+.sticky-mobile a,.sticky-mobile button{flex:1;text-align:center;padding:11px;border-radius:var(--radius);font-family:var(--font-display);font-size:15px;font-weight:700;text-decoration:none;border:none;cursor:pointer}
+.sticky-call{background:#C2621A;color:#fff;display:flex;align-items:center;justify-content:center;gap:8px}
+.sticky-quote{background:var(--amber);color:#fff}
+body{padding-bottom:66px}
+
+/* ---- modal ---- */
+.modal-overlay{position:fixed;inset:0;background:rgba(17,28,42,0.72);backdrop-filter:blur(3px);z-index:200;display:none;align-items:flex-end;justify-content:center;padding:0}
+.modal-overlay.open{display:flex}
+.modal-box{background:var(--navy);width:100%;max-width:560px;border-radius:20px 20px 0 0;padding:26px 22px 30px;position:relative;max-height:92vh;overflow-y:auto;box-shadow:0 -10px 50px rgba(0,0,0,0.4);animation:slideUp 0.35s cubic-bezier(.22,1,.36,1)}
+@keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+@media (min-width:640px){.modal-overlay{align-items:center;padding:20px}.modal-box{border-radius:20px}}
+.modal-close{position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.08);border:none;color:rgba(255,255,255,0.6);display:flex;align-items:center;justify-content:center;cursor:pointer}
+.modal-close:hover{background:rgba(255,255,255,0.15);color:#fff}
+.modal-title{font-family:var(--font-display);font-size:26px;font-weight:800;color:#fff;margin:6px 0 6px;padding-right:30px}
+.modal-sub{font-size:13.5px;color:rgba(255,255,255,0.6);margin-bottom:20px}
+.hero-form-fields{min-height:570px;position:relative}
+.form-skeleton{padding:4px;display:flex;flex-direction:column;gap:12px}
+.form-skeleton-line,.form-skeleton-field,.form-skeleton-btn{background:linear-gradient(90deg,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.14) 50%,rgba(255,255,255,0.08) 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;border-radius:6px}
+.form-skeleton-line{height:13px}
+.form-skeleton-line.wide{width:70%}
+.form-skeleton-line.medium{width:45%}
+.form-skeleton-field{height:46px;border-radius:8px}
+.form-skeleton-btn{height:50px;border-radius:8px;margin-top:6px}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+@media (min-width:768px){
+  .topbar-phone{display:flex}
+  .services-grid{grid-template-columns:repeat(3,1fr)}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .reviews-grid{grid-template-columns:repeat(3,1fr)}
+  .stats-grid{grid-template-columns:repeat(4,1fr)}
+  .sticky-mobile{display:none}
+  body{padding-bottom:0}
+  section{padding:72px 5%}
+  .hero{padding:64px 5% 72px}
+  .hero-photo{aspect-ratio:16/9;margin-top:40px}
+  .final-cta{padding:88px 5%}
+  .btn-primary{width:auto;max-width:none}
+}
+</style>
+</head>
+<body>
+
+<div class="mockup-banner" role="alert">
+  <span><strong>MOCKUP FUNNEL</strong> — demo content only, not a live campaign.</span>
+</div>
+
+<div class="topbar">
+  <div class="topbar-logo">Peak<span>Build</span> Solutions</div>
+  <div class="topbar-right">
+    <a href="tel:+15550001234" class="topbar-phone">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.25 1.23 2 2 0 012.26 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.35a16 16 0 006.74 6.74l1.71-1.71a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      (555) 000-1234
+    </a>
+    <button class="btn-primary" onclick="openModal()">Free Inspection</button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">Licensed · Insured · Emergency Response Available</div>
+  <h1>Storm Damage or a Leak? Get a <em>Free Emergency Inspection</em> — Today.</h1>
+  <p class="hero-sub">Active leak or storm damage doesn't wait, and neither do we. PeakBuild sends someone out fast, tarps what needs tarping, and helps you sort the insurance claim.</p>
+  <button class="btn-primary" onclick="openModal()">
+    Get My Free Emergency Inspection
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </button>
+  <p class="hero-microcopy">Takes under a minute · Same-day response</p>
+  <div class="hero-photo">
+    <img src="images/service-6.jpg" alt="PeakBuild roofer securing emergency tarp on storm-damaged roof" width="820" height="461" loading="eager" decoding="async">
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5-Star Rated on Google</div>
+  <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Licensed & Fully Insured</div>
+  <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Same-Day Emergency Response</div>
+</div>
+
+<!-- STATS -->
+<section class="stats-bg">
+  <div class="section-inner">
+    <div class="stats-grid">
+      <div class="stat-box"><div class="stat-num">1,500+</div><div class="stat-label">Roofs Completed</div></div>
+      <div class="stat-box"><div class="stat-num">Same-Day</div><div class="stat-label">Emergency Response</div></div>
+      <div class="stat-box"><div class="stat-num">18+</div><div class="stat-label">Years in Business</div></div>
+      <div class="stat-box"><div class="stat-num">5.0★</div><div class="stat-label">Google Rating</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-bg" id="services">
+  <div class="section-inner">
+    <div class="section-label">Emergency Storm Response</div>
+    <h2 class="section-title">When Storm Damage Hits, We Move Fast</h2>
+    <p class="section-sub">From the first tarp to the final insurance check, we handle the whole thing so you don't have to chase three different contractors.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <h3>Emergency Tarping</h3>
+        <p>Active leak or exposed roof? Same-day tarping to stop the damage from spreading while we plan the repair.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Storm & Leak Repair</h3>
+        <p>Missing shingles, damaged flashing, active leaks — fixed fast, done right, so it doesn't come back after the next storm.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" fill="currentColor" stroke="none"/></svg></div>
+        <h3>Insurance Claim Assistance</h3>
+        <p>We document the damage, meet the adjuster, and push for a fair settlement — start to finish.</p>
+      </div>
+    </div>
+    <div class="services-cta">
+      <button class="btn-primary" onclick="openModal()">Get My Free Emergency Inspection</button>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-bg" id="why-us">
+  <div class="section-inner">
+    <div class="section-label">Why PeakBuild</div>
+    <h2 class="section-title">When It's Urgent, You Need Someone Reliable</h2>
+    <p class="section-sub">Storm damage attracts fly-by-night contractors who disappear after the check clears. Here's what makes us different.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg></div>
+        <div><h3>We actually show up same-day</h3><p>Active damage doesn't wait — we prioritize emergency calls and get someone out fast.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg></div>
+        <div><h3>We handle the insurance paperwork</h3><p>Documentation, adjuster meetings, claim follow-up — we deal with it so you don't have to.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg></div>
+        <div><h3>Written, line-by-line quotes</h3><p>You'll know exactly what you're paying for before we start — no surprise charges.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg></div>
+        <div><h3>10-year workmanship warranty</h3><p>If anything we installed fails due to workmanship within 10 years, we fix it free.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-bg" id="testimonials">
+  <div class="section-inner">
+    <div class="section-label">What People Are Saying</div>
+    <h2 class="section-title">Trusted by Homeowners, Proven by Results</h2>
+    <p class="section-sub">Real reviews, real results.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p class="review-text">"Called Tuesday after storm damage, tarp was on by Wednesday, full repair done by Friday."</p>
+        <div class="review-author"><div class="review-avatar" style="background:var(--navy-light)">JP</div><div><div class="review-name">Jessica P.</div><div class="review-role">Emergency Repair</div></div></div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p class="review-text">"Got three quotes and PeakBuild was clear, honest, and fair. Handled my insurance claim completely."</p>
+        <div class="review-author"><div class="review-avatar" style="background:var(--navy-light)">TK</div><div><div class="review-name">Tom K.</div><div class="review-role">Insurance Claim</div></div></div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p class="review-text">"PeakBuild replaced our entire roof in a single day. Professional, clean, incredible result."</p>
+        <div class="review-author"><div class="review-avatar">MR</div><div><div class="review-name">Maria R.</div><div class="review-role">Full Replacement</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-bg" id="faq">
+  <div class="section-inner">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">Answers Before You Ask</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">How fast can someone actually get to my house?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-a"><p>For active leaks or storm damage, we prioritize same-day response. Call us directly and we'll confirm a time within a few hours.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Do you work with insurance companies?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-a"><p>Yes. We handle the entire claims process — documentation, adjuster meetings, and final paperwork.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Is the emergency inspection really free?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-a"><p>Completely free, no strings attached. We inspect the damage and give you a full written quote — you decide if you want to move forward.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What if the damage is worse than it looks?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-a"><p>That's exactly what the inspection is for. We document everything with photos so you and your insurer both have the full picture.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <h2>Storm Damage Won't Wait.<br><em>Neither Do We.</em></h2>
+  <p>Get a free emergency inspection — no pressure, no obligation.</p>
+  <button class="btn-primary" style="font-size:18px;padding:16px 32px" onclick="openModal()">Get My Free Emergency Inspection</button>
+</section>
+
+<footer role="contentinfo">
+  <div class="footer-logo">Peak<span>Build</span> Solutions</div>
+  <div class="footer-address">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    123 Queens Blvd, Suite 200, Queens, NY 11415
+  </div>
+  <p class="footer-copy">© 2026 PeakBuild Solutions. All rights reserved. Licensed & Insured.</p>
+</footer>
+
+<div class="sticky-mobile">
+  <a href="tel:+15550001234" class="sticky-call">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.25 1.23 2 2 0 012.26 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.35a16 16 0 006.74 6.74l1.71-1.71a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Call Now
+  </a>
+  <button class="sticky-quote" onclick="openModal()">Free Inspection</button>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <p class="modal-title">Get Your Free Emergency Inspection</p>
+    <p class="modal-sub">Fill out the form and we'll call you today to schedule your inspection.</p>
+    <div class="hero-form-fields" id="hero-form-fields">
+      <div class="form-skeleton" id="form-skeleton" aria-hidden="true">
+        <div class="form-skeleton-line wide"></div>
+        <div class="form-skeleton-line medium"></div>
+        <div class="form-skeleton-field"></div>
+        <div class="form-skeleton-field"></div>
+        <div class="form-skeleton-field"></div>
+        <div class="form-skeleton-btn"></div>
+      </div>
+      <!-- GHL form iframe injected via JS the first time the modal opens -->
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  // TODO: replace with the funnel-specific form's ID once it's built in GHL.
+  var FUNNEL_FORM_ID = 'E1KWdmzNzCSbLTl3V7Pb';
+  var formInjected = false;
+
+  window.openModal = function(){
+    document.getElementById('modal-overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    if (!formInjected) injectForm();
+  };
+  window.closeModal = function(){
+    document.getElementById('modal-overlay').classList.remove('open');
+    document.body.style.overflow = '';
+  };
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeModal();
+  });
+
+  function injectForm(){
+    formInjected = true;
+    var wrap = document.getElementById('hero-form-fields');
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://api.leadconnectorhq.com/widget/form/' + FUNNEL_FORM_ID;
+    iframe.style.cssText = 'width:100%;height:570px;border:none;border-radius:8px;opacity:0;transition:opacity 0.4s ease;';
+    iframe.id = 'inline-' + FUNNEL_FORM_ID;
+    iframe.setAttribute('data-layout', "{'id':'INLINE'}");
+    iframe.setAttribute('data-trigger-type', 'alwaysShow');
+    iframe.setAttribute('data-trigger-value', '');
+    iframe.setAttribute('data-activation-type', 'alwaysActivated');
+    iframe.setAttribute('data-activation-value', '');
+    iframe.setAttribute('data-deactivation-type', 'neverDeactivate');
+    iframe.setAttribute('data-deactivation-value', '');
+    iframe.setAttribute('data-form-name', 'Funnel Estimate');
+    iframe.setAttribute('data-height', '570');
+    iframe.setAttribute('data-layout-iframe-id', 'inline-' + FUNNEL_FORM_ID);
+    iframe.setAttribute('data-form-id', FUNNEL_FORM_ID);
+    iframe.title = 'Funnel Estimate';
+    iframe.onload = function(){
+      iframe.style.opacity = '1';
+      var sk = document.getElementById('form-skeleton');
+      if (sk) sk.style.display = 'none';
+    };
+    wrap.appendChild(iframe);
+    if (!document.getElementById('lc-form-embed-js')) {
+      var script = document.createElement('script');
+      script.src = 'https://link.msgsndr.com/js/form_embed.js';
+      script.id = 'lc-form-embed-js';
+      document.body.appendChild(script);
+    }
+  }
+
+  window.toggleFaq = function(btn){
+    var item = btn.closest('.faq-item');
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(i){ i.classList.remove('open'); });
+    if (!wasOpen) item.classList.add('open');
+  };
+})();
+</script>
+
+</body>
+</html>

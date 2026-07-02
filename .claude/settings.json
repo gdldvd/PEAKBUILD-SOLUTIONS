@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "f=$(grep -o '\"file_path\"[[:space:]]*:[[:space:]]*\"[^\"]*\"' | head -1 | sed -E 's/.*: *\"(.*)\"/\\1/' | sed 's/\\\\\\\\/\\//g'); case \"$f\" in *.html|*.htm) b=$(basename \"$f\"); git add \"$f\" && git commit -m \"Auto-update $b\" --quiet && git push --quiet;; esac",
+            "timeout": 30,
+            "statusMessage": "Committing and pushing HTML change..."
+          }
+        ]
+      }
+    ]
+  }
+}

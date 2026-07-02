@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Request Received | PeakBuild Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&family=Barlow:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
+<!--
+  IFRAME-BUST SCRIPT — runs before paint.
+  Your GHL form's "On Submit" action redirects to this page. Because the form
+  itself is embedded in an iframe on funnel.html, a normal redirect would just
+  load this page *inside* that iframe — invisible to ad platform pixels, which
+  generally only fire reliably on the browser's real top-level page.
+  This script detects that situation and forces the whole browser tab to
+  navigate here instead, so this becomes the actual page the visitor is on.
+-->
+<script>
+try {
+  if (window.top !== window.self) {
+    window.top.location.href = window.self.location.href;
+  }
+} catch (e) {
+  // Some environments (sandboxed previews, certain iframe security policies)
+  // block top-level navigation entirely. If that happens, just let the page
+  // render normally inside the frame instead of throwing and breaking load.
+}
+</script>
+
+<!--
+  TODO — CONVERSION PIXELS
+  Drop your real Meta Pixel / Google Ads conversion tag here once you have
+  the account IDs. This is the ONE page in the whole funnel where a pixel
+  will reliably fire, because of the iframe-bust above. Example placeholders:
+
+  <script>
+    // Meta Pixel
+    // fbq('track', 'Lead');
+  </script>
+  <script>
+    // Google Ads conversion
+    // gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXX'});
+  </script>
+-->
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1B2D42;--amber:#E07A28;--amber-light:#F08C3A;--amber-pale:#FDF3E9;
+  --font-display:'Barlow Condensed','Arial Narrow',sans-serif;--font-body:'Barlow','Arial',sans-serif;
+  --radius:10px;--radius-lg:16px;
+}
+body{font-family:var(--font-body);color:#fff;background:var(--navy);min-height:100vh;line-height:1.6;display:flex;align-items:center;justify-content:center;padding:24px}
+.card{max-width:520px;width:100%;text-align:center}
+.mockup-tag{display:inline-flex;align-items:center;background:rgba(224,122,40,0.15);border:1px solid rgba(224,122,40,0.35);color:#F5A05A;font-size:11px;font-weight:600;padding:5px 12px;border-radius:30px;letter-spacing:1px;text-transform:uppercase;margin-bottom:28px}
+.check-icon{width:68px;height:68px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 22px}
+.check-icon svg{width:32px;height:32px;color:#fff}
+h1{font-family:var(--font-display);font-size:clamp(28px,5vw,38px);font-weight:800;line-height:1.15;margin-bottom:14px}
+h1 em{color:var(--amber);font-style:normal}
+.sub{font-size:15.5px;color:rgba(255,255,255,0.7);margin-bottom:30px}
+.next-list{display:flex;flex-direction:column;gap:14px;text-align:left;margin-bottom:30px}
+.next-item{display:flex;gap:14px;align-items:flex-start}
+.next-num{width:26px;height:26px;background:rgba(224,122,40,0.18);border:1px solid rgba(224,122,40,0.4);color:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:12px;font-weight:800;flex-shrink:0}
+.next-item p{font-size:13.5px;color:rgba(255,255,255,0.75)}
+.next-item strong{color:#fff}
+.urgent-box{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);border-radius:var(--radius-lg);padding:20px}
+.urgent-box p{font-size:13px;color:rgba(255,255,255,0.55);margin-bottom:10px}
+.urgent-phone{font-family:var(--font-display);font-size:24px;font-weight:800;color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.urgent-phone svg{color:var(--amber)}
+.back-link{display:inline-block;margin-top:24px;font-size:13px;color:rgba(255,255,255,0.4);text-decoration:underline}
+.back-link:hover{color:rgba(255,255,255,0.7)}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="mockup-tag">Mockup — demo page only</div>
+  <div class="check-icon">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
+  </div>
+  <h1>Request Received.<br><em>We're On It.</em></h1>
+  <p class="sub">Your emergency inspection request has been sent to our team. Here's what happens next:</p>
+
+  <div class="next-list">
+    <div class="next-item">
+      <div class="next-num">1</div>
+      <p><strong>We review your request</strong> — situation and location, so we call with the right info ready.</p>
+    </div>
+    <div class="next-item">
+      <div class="next-num">2</div>
+      <p><strong>We call you today</strong> to confirm details and schedule your free on-site inspection.</p>
+    </div>
+    <div class="next-item">
+      <div class="next-num">3</div>
+      <p><strong>You get a written quote</strong> — itemized, no surprise charges, no obligation to book.</p>
+    </div>
+  </div>
+
+  <div class="urgent-box">
+    <p>Active leak getting worse right now? Skip the wait —</p>
+    <a href="tel:+15550001234" class="urgent-phone">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.25 1.23 2 2 0 012.26 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.35a16 16 0 006.74 6.74l1.71-1.71a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      (555) 000-1234
+    </a>
+  </div>
+
+  <a href="funnel.html" class="back-link">← Back to PeakBuild Solutions</a>
+</div>
+
+</body>
+</html>
